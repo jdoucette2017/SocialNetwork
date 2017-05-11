@@ -34,7 +34,7 @@ function showWelcomeContainer() {
 	$("#login").hide();
 	$("#welcome").show();
 	$("#welcomeText").html("Welcome Back " + user.displayName + "!");
-	$("#userEmail").html("Email: "user.email);
+	$("#userEmail").html("Email: " + user.email);
 };
 
 
