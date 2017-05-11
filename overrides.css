@@ -15,3 +15,15 @@
 	top: -1000px;
 }
 
+label.upload-group{
+	width:100px;
+	height:40px;
+	color:white;
+}
+
+input#file{
+	width:.1px;
+	height:.1px;
+	position:absolute;
+	z-index:-1;
+}
