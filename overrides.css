@@ -2,28 +2,16 @@
 	width: 40%;
 }
 
-label.upload-group {
-	width: 100px;
-	height: 40px;
-	color: white;
-	padding: 5 5 5 5;
-	text-align: center;
+#inputLabel {
+	overflow: hidden;
+	max-height: 40px;
 	background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%); 
+	padding: 10px 10px 10px 10px;
+	color: white;
 }
 
-input#file {
-	width: 0.1px;
-	height: 0.1px;
-	position: absolute;
-	z-index: -1;
-}
-
-.contentImage {
-	width: 100%;
-}
-.contentCaption {
-	width: 100%;
-	font-size: 1em;
-	text-align: center;
+#inputLabel > input {
+	position: fixed;
+	top: -1000px;
 }
 
