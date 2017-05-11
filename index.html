@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Hi!Nigger</title>
+  <title>Hi!</title>
 
     <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -34,7 +34,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">Your Messages</a></li>
-          <li><a href="#contact">Hi! Board</a></li>
+          <li><a href="board.html">Hi! Board</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -56,22 +56,18 @@
   <div class="container" id="welcome">
     <div class="row">
       <div class="col-lg-6">
+        <img id="userImage"></img>
         <h2 id="welcomeText"></h2>
         <h5 id="userEmail"></h5>
       </div>
       <div class="col-lg-6" id="uploadDiv">
         <h2>Upload You Hi! Message</h2>
-          <label class="myLabel" id="inputLabel">
-            <input type="file" id="upload" required/>
-            <span>Select File</span>
-          </label>
-          <div class="input-group upload-group">
-          <input type="text" placeholder="Image Title" id="imgTitle">
-          </div>
-          <div class="input-group upload-group">
-          <input type="text" placeholder="Image Caption" id="imgDesc">
-          </div>
-          <button type="button" class="btn btn-primary upload-group" onclick="confirmUpload()">SUBMIT</button>
+        <input type="text" id="imageCaption" placeholder="Write a Caption">
+        <label class="upload-group">
+          Upload File
+          <input type="file" class="upload-group" id="file">
+        </label>
+        <button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">SUBMIT</button>
       </div>
     </div>
   </div>
