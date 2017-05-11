@@ -34,7 +34,9 @@ function showWelcomeContainer() {
 	$("#login").hide();
 	$("#welcome").show();
 	$("#welcomeText").html("Welcome Back " + user.displayName + "!");
+	$("#userEmail").html(user.email);
 };
+
 
 
 function handleFileSelect(event) {
